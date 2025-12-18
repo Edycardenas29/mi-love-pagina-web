@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #fff0f5, #ffe4ec);
+  color: #444;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #d6336c;
+}
+
+header p {
+  color: #666;
+}
+
+section {
+  padding: 25px 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  max-width: 420px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 25px 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  animation: fadeIn 1s ease;
+}
+
+.card h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color: #c2255c;
+  margin-bottom: 15px;
+}
+
+.carta {
+  white-space: pre-line;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* PLAYLIST */
+.playlist {
+  text-align: center;
+}
+
+.playlist iframe {
+  width: 100%;
+  max-width: 300px;
+  height: 80px;
+  margin: 10px auto;
+  border-radius: 12px;
+  border: none;
+  display: block;
+}
+
+/* POLAROID */
+.polaroid img {
+  width: 100%;
+  max-width: 280px;
+  background: #fff;
+  padding: 10px 10px 25px;
+  border-radius: 15px;
+  margin: 15px auto;
+  display: block;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transform: rotate(-3deg);
+  animation: polaroidIn 1.2s ease forwards;
+}
+
+/* POEMA */
+.poema {
+  text-align: center;
+  font-style: italic;
+  line-height: 1.8;
+}
+
+/* LIBRO */
+.libro {
+  text-align: center;
+}
+
+.frase {
+  min-height: 60px;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+button {
+  background: #d6336c;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #b02a56;
+}
+
+/* ANIMACIÓN */
+.animacion {
+  text-align: center;
+}
+
+.animacion img {
+  width: 200px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* ANIMACIONES */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes polaroidIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8) rotate(-8deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(-3deg);
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
+/* =========================
+   CORAZONES FLOTANDO
+========================= */
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 20px;
+  color: #ff5d8f;
+  animation: floatUp linear forwards;
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 999;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0) scale(1);
+    opacity: 0.9;
+  }
+  to {
+    transform: translateY(-110vh) scale(1.4);
+    opacity: 0;
+  }
+}
+/* =========================
+   SECCIÓN FINAL BUDU & DUDU
+========================= */
+#final-budu {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(to top, #fff0f6, #fff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.budu-container {
+  z-index: 2;
+}
+
+.budu-img {
+  width: 260px;
+  max-width: 90%;
+  animation: floatBudu 4s ease-in-out infinite;
+}
+
+@keyframes floatBudu {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.mensaje-final {
+  font-family: 'Georgia', serif;
+  font-size: 1.4rem;
+  color: #b23a6f;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+/* =========================
+   CONFETI
+========================= */
+.confetti {
+  position: absolute;
+  top: -10px;
+  width: 10px;
+  height: 10px;
+  opacity: 0.9;
+  animation: confettiFall linear forwards;
+}
+
+@keyframes confettiFall {
+  from {
+    transform: translateY(0) rotate(0deg);
+  }
+  to {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}

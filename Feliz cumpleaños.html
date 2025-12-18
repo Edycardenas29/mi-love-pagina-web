@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Cumpleaños ❤️</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>Feliz Cumpleaños, Amor 💖</h1>
+    <p>Una página hecha solo para ti</p>
+  </header>
+
+  <!-- 1. CARTA -->
+  <section>
+    <div class="card">
+      <h2>💌 Mi carta para ti</h2>
+      <div 
+        class="carta" 
+        id="carta"
+        data-text="Mi amor 💖,
+
+Sabes, hay un montón de palabras para decirte lo que siento por ti, pero todas se quedan cortas para expresar todo lo que me haces sentir. Llegaste a mi vida de la forma más indescriptible: sin esperarlo, sin planearlo y sin imaginarlo, convirtiéndote en la mejor casualidad de mi historia. Desde ese momento supe que jamás había sentido algo tan hermoso como el amor y la felicidad que llegaron contigo 🤍.
+
+Quién diría que un casual juego de dardos 🎯 me permitiría conocer a alguien que cambiaría mi mundo por completo. A alguien que, sin proponérselo, se convertiría en mi lugar seguro, en mi sonrisa diaria y en esa persona en la que pienso incluso en los momentos más cotidianos.
+
+Gracias por ser tú, por tu forma de querer, por tu paciencia, por tu apoyo y por hacerme sentir tan amada incluso en la distancia. Contigo aprendí que el amor no siempre llega como lo imaginamos, pero cuando llega de la forma correcta, se siente en paz, en alegría y en el corazón ❤️.
+
+Hoy celebro tu vida, pero también celebro la suerte inmensa que tengo de caminar a tu lado. Deseo que este nuevo año esté lleno de sueños cumplidos, risas infinitas y momentos que sigamos guardando solo para nosotros ✨.
+
+Feliz cumpleaños, mi pastelito 🎂. Te quiero mucho más de lo que las palabras pueden explicar, más de lo que el tiempo puede medir y más de lo que mi corazón logra guardar. Gracias por ser mi alegría diaria 💫.">
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. PLAYLIST (APARECE AL FINAL DE LA CARTA) -->
+  <section id="playlistSection" class="hidden">
+    <div class="card playlist polaroid">
+      <h2>🎶 Nuestra canción</h2>
+
+      <img src="Img/WhatsApp Image 2025-12-17 at 5.49.38 PM.jpeg" alt="Foto de nosotros">
+
+      <iframe 
+        src="https://open.spotify.com/embed/track/5okqhr7805Y9x51CaR2U9U"
+        allow="encrypted-media">
+      </iframe>
+
+      <p>Esta canción es para ti 💖</p>
+    </div>
+  </section>
+
+  <!-- 3. POEMA -->
+  <section>
+    <div class="card">
+      <h2>📜 Te quiero</h2>
+      <div class="poema">
+        Te quiero cuando el día nace y aún tienes sueño,<br>
+        te quiero cuando la tarde muere en tus ojos lentos,<br>
+        te quiero en la distancia, aunque no estés conmigo,<br>
+        te quiero en cada paso, en cada suspiro.<br><br>
+
+        Te quiero en el silencio de la noche callada,<br>
+        cuando la luna teje sombras en mi ventana.<br>
+        Te quiero en la risa, te quiero en el llanto,<br>
+        te quiero en mis brazos, te quiero en mi canto.<br><br>
+
+        Porque amarte es sencillo, como el agua y el viento,<br>
+        porque amarte es mi vida, mi razón y mi tiempo.<br>
+        Y aunque el mundo se acabe y el sol se apague,<br>
+        te seguiré queriendo, más allá de la tarde.<br><br>
+
+        <strong>— Pablo Neruda</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. LIBRITO DE FRASES -->
+  <section>
+    <div class="card libro">
+      <h2>📖 Librito de frases</h2>
+      <div id="frase" class="frase"></div>
+      <button onclick="cambiarFrase()">Pasar página</button>
+    </div>
+  </section>
+
+  <!-- 5. BUDU Y DUDU -->
+  <section id="final-budu">
+  <div class="budu-container">
+    <img src="Img\budu_dudu_birthday.gif" alt="Budu y Dudu cumpleaños" class="budu-img">
+
+    <h2 class="mensaje-final">
+      Feliz cumpleaños, mi amor 💖  
+      <br>
+      Gracias por ser mi lugar seguro,  
+      mi risa diaria y mi corazón.
+    </h2>
+  </div>
+
+  <!-- Confeti -->
+  <div id="confetti-container"></div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    Hecho con amor solo para ti ❤️
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
